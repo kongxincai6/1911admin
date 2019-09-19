@@ -10,11 +10,18 @@ asset 资源目录
 #### 预处理语言
 less
 npm install less less-loader
-
+默认不支持less 需要在config->webpack.config.js 把所有的sass改为less
 ##### UI框架
 antd less
+安装插件 npm install antd
+全局引入 
+在index.js import '/antd/dist/antd.css'
+按需引入
 #### 基本配置
 起别名
+webpack.config.js  alias
+ 'style':path.join(__dirname,'../src/style')
+ 'style':path.resolve(__dirname,'../src/style')
 服务器代理
 .....
 
