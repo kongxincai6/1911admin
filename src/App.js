@@ -1,24 +1,13 @@
-import React from 'react';
-import 'style/test.less';
-import { Button } from 'antd';
+////////这里是根主件
 
-function App() {
+import React from 'react';
+import {Button} from 'antd'
+
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-      <Button type="primary">hehe</Button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+       {props.children}
     </div>
   );
 }
